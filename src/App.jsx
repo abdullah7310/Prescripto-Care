@@ -6,7 +6,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 // import Home from './pages/Home';
 import About from './Pages/About';
-import Contact from './pages/Contact';
+import Contact from './Pages/Contact';
 // import AllDoctors from './pages/AllDoctors';
 import Appointment from './Pages/Appointment';
 import Home from './Pages/Home';
