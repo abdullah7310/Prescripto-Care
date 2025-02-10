@@ -119,8 +119,9 @@ function AllDoctors() {
           </button>
         )}
       </div>
-    
+    <div className='px-20 sm:hidden'>
     <Footer/>
+    </div>
     </>
   )
 }
