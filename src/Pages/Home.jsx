@@ -99,7 +99,7 @@ function Home() {
         <img className='mb-3 w-[90%] sm:w-auto' src={groupIcon} alt="" />
       </div>
       <div className='mt-4 sm:mt-0 flex justify-center sm:justify-start'>
-        <button onClick={()=>navigate("/appointment")} className='w-[180px] sm:w-[200px] h-[45px] sm:h-[48px] rounded-[35px] flex items-center justify-center gap-2 bg-white'>
+        <button onClick={()=>navigate("/appointment")} className='w-[180px]  mb-8 sm:mb-0 sm:w-[200px] h-[45px] sm:h-[48px] rounded-[35px] flex items-center justify-center gap-2 bg-white'>
           <p className='text-sm sm:text-base'>Book Appointment</p>
           <FaArrowRightLong className='mt-1' />
         </button>

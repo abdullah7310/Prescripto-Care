@@ -38,7 +38,7 @@ function Navbar({ isLoggedIn, setIsLoggedIn }) {
   return (
     <div className='px-2 w-full h-[40px] flex justify-between items-center sm:px-6 sm:h-[45px]  border-b-1 border-[#ADADAD] lg:px-20'>
       <div className='w-[30%] h-[80%] sm:w-[17%] sm:h-full md:w-[18%] lg:w-[10%]  flex items-center'>
-        <img className='w-[100%] h-[60%]' src={logo} alt="" />
+        <img className='w-[100%] h-[65%] sm:h-[60%]' src={logo} alt="" />
       </div>
       <div className='w-[15%] h-[80%] flex items-center justify-end sm:hidden md:hidden lg:hidden '>
         <FaBars size={20} onClick={toggleMenu} />
