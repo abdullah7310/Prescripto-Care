@@ -7,7 +7,7 @@ import Footer from '../component/Footer'
 import { useLocation, useNavigate } from 'react-router-dom'
 import { toast } from 'react-toastify'
 
-function Appointment() {
+function Appointment({isLoggedIn}) {
   const navigate = useNavigate()
     const [appointedDoctors, setAppointmentDoctors] = useState(() => {
       const doctor = localStorage.getItem("doctors");
@@ -37,6 +37,12 @@ function Appointment() {
 
   }
   function handleAppointment(){
+
+    if (!isLoggedIn) {
+      toast.error("Please log in to book an appointment!");
+      navigate("/login_page");
+      return;
+    }
     if(selectDate && selectTime && selectDay){
       const appointmentData = {
         selectDate,

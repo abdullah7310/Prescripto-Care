@@ -35,9 +35,9 @@ function App() {
       <Route path='/about' element={<About/>}/>
       <Route path='/contact' element={<Contact/>}/>
       <Route path='/all-doctors' element={<AllDoctors/>}/>
-      <Route path='/appointment' element={<Appointment/>}/>
+      <Route path='/appointment'  element={<Appointment isLoggedIn={isLoggedIn} />}/>
       <Route path="/signUp_page" element={<SignUp handleLoginStatus={handleLoginStatus} />} />
-      <Route path='/login_page' element={<LoginPage/>}/>
+      <Route path="/login_page" element={<LoginPage setIsLoggedIn={setIsLoggedIn} />}/>
       <Route path='/my-appointments' element={<MyAppointment/>} />
       <Route path='/profile' element={<Profile/>} />
     </Routes>
