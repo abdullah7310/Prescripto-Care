@@ -78,7 +78,6 @@ function Appointment({isLoggedIn}) {
   return (
     <>
     <div className='px-20 mt-10 w-full pb-10'>
-      <button onClick={()=>navigate(-1)}>go back</button>
       <div className='flex justify-between'>
         <div className='w-[17%] flex items-end rounded-xl bg-[#5F6FFF] overflow-hidden h-[40vh]'>
             <img src={image?image:Doctor}  alt="" />
