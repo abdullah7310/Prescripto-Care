@@ -115,7 +115,7 @@ function LoginPage({ setIsLoggedIn }) {
           </button>
 
           <p className="text-sm text-gray-600 text-center mt-2">
-            Don't have an account? <span onClick={() => navigate("signUp_page")} className="text-blue-500 cursor-pointer">Sign up</span>
+            Don't have an account? <span onClick={() => navigate("/signUp_page")} className="text-blue-500 cursor-pointer">Sign up</span>
           </p>
         </form>
       </div>
