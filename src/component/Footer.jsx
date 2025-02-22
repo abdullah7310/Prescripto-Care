@@ -4,7 +4,7 @@ import Logo from '../assets/logo-prescripto.png'
 function Footer() {
   return (
     <>
-            <div className='w-full px-10 sm:px-20'>
+            <div className='w-full px-6 sm:px-20'>
             <div className='border-t-1 border-b-1 pt-2 mt-18 sm:w-full sm:h-50 flex items-center sm:mt-18 justify-center sm:border-b-0 border-[#4B5563] sm:mb-4'>
               <div className='w-[85vw] h-[100%] flex justify-between'>
                 <div className=' h-full w-[50%]'>

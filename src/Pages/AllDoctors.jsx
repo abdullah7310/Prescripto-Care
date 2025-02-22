@@ -80,17 +80,18 @@ function AllDoctors() {
 
   return (
     <>
-    <div className='px-20 w-full pb-10 '>
-      <div className='w-full mt-8 mb-4 text-sm font-normal bg-white font-outfit text-[#4B5563] '>Browse through the doctors specialist.</div>
-      <div className='flex justify-between'>
-        <div className='w-[17%] h-[60vh]'>
+    <div className='px-2 lg:px-20 w-full pb-10 '>
+      <div className='w-full lg:mt-8 mt-2 mb-4 text-[12px] lg:text-sm  font-normal bg-white font-outfit text-[#4B5563] '>Browse through the doctors specialist.</div>
+      <div className='flex flex-col lg:flex-row lg:justify-between gap-2'>
+        <div className='w-[auto] lg:w-[17%] grid grid-cols-3 gap-1 lg:flex lg:flex-col  lg:h-[60vh]'>
           {["All", "General Physician", "Gynecologist", "Dermatologist", "Pediatrician", "Neurologist", "Gastroenterologist"].map((doctorTitle)=>(
 
           <TitleCard title={doctorTitle} key={doctorTitle} onClick={()=>setSelectedTitle(doctorTitle==="All"?"":doctorTitle)}/>
           ))}
 
         </div>
-        <div className='w-[78%] grid grid-cols-4 gap-4 ' >
+        <hr  className='sm:hidden border-[#B4B4B4]'/>
+        <div className='lg:w-[78%] w-[90%] grid lg:grid-cols-4 m-auto mt-5 lg:gap-4 gap-3 ' >
         {filteredDoctors.slice(0,visibleDoctors).map((card,ind)=>(
           <DoctorCard key={ind} image={card.image} doctorname={card.doctorname} title={card.title} />
         ))}
@@ -119,7 +120,7 @@ function AllDoctors() {
           </button>
         )}
       </div>
-    <div className='px-20 sm:hidden'>
+    <div className='lg:px-5'>
     <Footer/>
     </div>
     </>
