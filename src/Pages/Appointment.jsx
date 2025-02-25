@@ -124,7 +124,7 @@ function Appointment({isLoggedIn}) {
             </div>
           ))}
         </div>
-        <div className='flex flex-wrap gap-2 mt-6 justify-start'>
+        <div className='grid grid-cols-3 sm:flex flex-wrap gap-2 mt-6 justify-start'>
           {['8:00 AM', '8:30 AM', '9:00 AM', '9:30 AM', '10:00 AM', '10:30 AM', '11:00 AM'].map((time, i) => (
             <div
               key={i}
