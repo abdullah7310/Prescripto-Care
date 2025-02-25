@@ -30,7 +30,7 @@ function Footer() {
       
             </div>
             <div className='w-full h-auto'>
-              <p className='text-[10px] sm:text-[13px] w-full text-center mb-3 text-[#4B5563]'>Copyright © 2024 GreatStack - All Right Reserved.</p>
+              <p className='text-[10px] sm:text-[13px] w-full text-center mb-3 text-[#4B5563]'>Copyright © 2024 Abdullah Ahmad - All Right Reserved.</p>
             </div>
 
             </div>
