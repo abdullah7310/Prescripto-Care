@@ -129,7 +129,7 @@ function Appointment({isLoggedIn}) {
             <div
               key={i}
               onClick={()=>setSelectTime(time)}
-              className={`border-1 h-[30px] w-21 rounded-[20px] px-4 flex items-center justify-center text-xs cursor-pointer 
+              className={`border-2 border-amber-300 h-[30px] w-21 rounded-[20px] px-4 flex items-center justify-center text-[10px] sm:text-xs cursor-pointer 
                 ${selectTime === time ? 'bg-[#5F6FFF] text-white' : 'text-gray-600 border-gray-400'}`}
             >
               {time}
