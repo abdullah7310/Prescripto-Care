@@ -6,7 +6,7 @@ import Footer from '../component/Footer'
 function About() {
   return (
     <div className='w-full mt-10 my-2 h-[10vh]'>
-      <div className='text-center  text-[#4B5563] text-[30px] font-outfit font-normal'>ABOUT <span className='font-semibold font-outfit text-[#171717]'>US</span></div>
+      <div className='text-center  text-[#4B5563] text-[20px] sm:text-[30px]  font-outfit font-normal'>ABOUT <span className='font-semibold font-outfit text-[#171717]'>US</span></div>
       <div className='flex flex-col items-center sm:items-start sm:flex-row px-20  gap-5 sm:gap-14 sm:h-[60vh] mt-10'>
         <div className='sm:w-[29%] w-[230px]   sm:h-[100%]'>
           <img src={AboutImage} className='w-[100%] h-[100%]' alt="" />
