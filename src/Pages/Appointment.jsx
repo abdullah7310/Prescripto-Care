@@ -79,7 +79,7 @@ function Appointment({isLoggedIn}) {
     <>
     <div className='px-2 sm:px-20 mt-4 sm:mt-10 w-full sm:pb-10'>
       <div className='flex justify-between'>
-        <div className='sm:w-[17%] flex sm:items-end rounded-xl bg-[#5F6FFF] overflow-hidden h-[22vh] sm:h-[40vh]'>
+        <div className='sm:w-[17%] flex sm:items-end rounded-xl bg-[#5F6FFF] overflow-hidden h-[21vh] sm:h-[40vh]'>
             <img src={image?image:Doctor}  alt="" />
         </div>
         <div className='w-[65%] sm:w-[78%] rounded-xl border-1 border-[#4B5563]  sm:px-8 px-2 py-1 sm:py-4 leading-tight' >
@@ -129,7 +129,7 @@ function Appointment({isLoggedIn}) {
             <div
               key={i}
               onClick={()=>setSelectTime(time)}
-              className={`border-2 border-amber-300 h-[30px] w-21 rounded-[20px] px-4 flex items-center justify-center text-[10px] sm:text-xs cursor-pointer 
+              className={`border-1 h-[30px] w-21 rounded-[20px] px-4 flex items-center justify-center text-[10px] sm:text-xs cursor-pointer 
                 ${selectTime === time ? 'bg-[#5F6FFF] text-white' : 'text-gray-600 border-gray-400'}`}
             >
               {time}
