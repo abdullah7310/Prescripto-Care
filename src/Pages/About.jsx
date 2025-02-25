@@ -12,10 +12,10 @@ function About() {
           <img src={AboutImage} className='w-[100%] h-[100%]' alt="" />
         </div>
         <div className='w-[270px] text-center sm:text-start sm:w-[60%] '>
-          <p className='text-[#4B5563] font-outfit text-sm leading-6 mb-4'>Welcome to Prescripto, your trusted partner in managing your healthcare needs conveniently and efficiently. At Prescripto, we understand the challenges individuals face when it comes to scheduling doctor appointments and managing their health records.</p>
-          <p className='text-[#4B5563] font-outfit text-sm leading-6 mb-4'>Prescripto is committed to excellence in healthcare technology. We continuously strive to enhance our platform, integrating the latest advancements to improve user experience and deliver superior service. Whether you're booking your first appointment or managing ongoing care, Prescripto is here to support you every step of the way.</p>
+          <p className='text-[#4B5563] font-outfit text-xs sm:text-sm leading-6 mb-4'>Welcome to Prescripto, your trusted partner in managing your healthcare needs conveniently and efficiently. At Prescripto, we understand the challenges individuals face when it comes to scheduling doctor appointments and managing their health records.</p>
+          <p className='text-[#4B5563] font-outfit text-xs sm:text-sm leading-6 mb-4'>Prescripto is committed to excellence in healthcare technology. We continuously strive to enhance our platform, integrating the latest advancements to improve user experience and deliver superior service. Whether you're booking your first appointment or managing ongoing care, Prescripto is here to support you every step of the way.</p>
           <h2 className='text-[#4B5563] text-[14px] mb-4 mt-8 font-bold'>Our Vision</h2>
-          <p className='text-[#4B5563] font-outfit text-sm leading-6 mb-4 '>Our vision at Prescripto is to create a seamless healthcare experience for every user. We aim to bridge the gap between patients and healthcare providers, making it easier for you to access the care you need, when you need it.</p>
+          <p className='text-[#4B5563] font-outfit sm:text-sm text-xs leading-6 mb-4 '>Our vision at Prescripto is to create a seamless healthcare experience for every user. We aim to bridge the gap between patients and healthcare providers, making it easier for you to access the care you need, when you need it.</p>
         </div>
       </div>
 
