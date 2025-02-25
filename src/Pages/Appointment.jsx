@@ -77,38 +77,38 @@ function Appointment({isLoggedIn}) {
 
   return (
     <>
-    <div className='px-20 mt-10 w-full pb-10'>
+    <div className='px-2 sm:px-20 mt-4 sm:mt-10 w-full sm:pb-10'>
       <div className='flex justify-between'>
-        <div className='w-[17%] flex items-end rounded-xl bg-[#5F6FFF] overflow-hidden h-[40vh]'>
+        <div className='sm:w-[17%] flex sm:items-end rounded-xl bg-[#5F6FFF] overflow-hidden h-[22vh] sm:h-[40vh]'>
             <img src={image?image:Doctor}  alt="" />
         </div>
-        <div className='w-[78%] rounded-xl border-1 border-[#4B5563]  px-8 py-4 leading-tight' >
-            <div className='flex items-center gap-2'>
-              <h1 className='font-outfit text-[#1F2937] text-[22px] font-semibold '>{doctorname?doctorname:"James Doe"}</h1>
-              <div className="w-auto h-full "><img src={Vector} className='h-[70%] w-[70%]'  alt="" /></div>
+        <div className='w-[65%] sm:w-[78%] rounded-xl border-1 border-[#4B5563]  sm:px-8 px-2 py-1 sm:py-4 leading-tight' >
+            <div className='flex gap-1 mb-1 items-center sm:justify-normal sm:items-center sm:gap-2'>
+              <h1 className='font-outfit text-[#1F2937] text-[15px] sm:text-[22px] font-semibold '>{doctorname?doctorname:"James Doe"}</h1>
+              <div className="w-auto h-full "><img src={Vector} className='sm:h-[70%] w-[60%] sm:w-[70%]'  alt="" /></div>
             </div>
             <div className='flex items-center gap-2'>
-            <h3 className='font-outfit text-[12px] text-[#4B5563]'>{title?title:"General Physician"}</h3>
-            <div className='border-1 border-[#4B5563] text-xs h-[20%] font-outfit w-auto px-3 py-1 rounded-[50px]'>2 years</div>
+            <h3 className='font-outfit text-[10px] sm:text-[12px] text-[#4B5563]'>{title?title:"General Physician"}</h3>
+            <div className='border-1 border-[#4B5563] text-[10px] sm:text-xs h-[5%] sm:h-[20%] font-outfit w-auto px-2 sm:px-3 sm:py-1 rounded-[50px]'>2 years</div>
             </div>
             <div className='flex items-center gap-2 mt-4 mb-2'>
-              <h3 className='font-outfit font-semibold text-[#4B5563]'>About </h3>
+              <h3 className='font-outfit text-sm sm:text-[20px] font-semibold text-[#4B5563]'>About </h3>
               <div><img src={AboutIcon} className='w-[90%]' alt="" /></div>
             </div>
-            <p className='w-[80%] font-outfit text-[#4B5563] text-xs leading-5'>
+            <p className='w-[80%] font-outfit text-[#4B5563] text-[10px] sm:text-xs  tracking-wide leading-5'>
             Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective 
             </p>
 
             <div className='flex items-center gap-2 mt-4 mb-2'>
-              <h3 className='font-outfit text-sm font-normal text-[#4B5563]'>Appointment fee : </h3>
-              <div className='font-outfit font-semibold'>$ 50</div>
+              <h3 className='font-outfit text-[14px] sm:text-sm font-normal text-[#4B5563]'>Appointment fee : </h3>
+              <div className='font-outfit text-[15px] sm:text-[18px] font-semibold'>$ 50</div>
             </div>
         </div>
 
       </div>
-      <div className='w-[78%] ml-[22%] mt-8 rounded-xl   py-4 leading-tight'>
-        <h1 className='font-outfit text-[#565656] font-semibold text-[17px]'>Booking slots</h1>
-        <div className='flex gap-4 mt-4'>
+      <div className='w-[99%] m-auto sm:w-[78%] px-2 sm:ml-[22%] mt-8 rounded-xl   py-4 leading-tight'>
+        <h1 className='font-outfit text-[#565656] font-semibold text-[14px] sm:text-[17px]'>Booking slots</h1>
+        <div className='grid grid-cols-5 sm:flex gap-2 sm:gap-4 mt-4'>
           {weekDates.map((day, index) => (
             <div
               key={index}
@@ -116,11 +116,11 @@ function Appointment({isLoggedIn}) {
                 setSelectDate(day.date)
                 setSelectDay(day.day)
               }}
-              className={`w-15 h-22 flex flex-col items-center justify-center rounded-[35px] px-2 py-2 cursor-pointer 
+              className={`sm:w-15 w-10 h-15 sm:h-22  flex flex-col items-center justify-center rounded-[35px] px-2 py-2 cursor-pointer 
                 ${selectDate === day.date ? 'bg-[#5F6FFF] text-white' :  'border border-gray-400 text-gray-600'}`}
             >
-              <h1 className='text-md font-semibold'>{day.day}</h1>
-              <p className='text-md font-semibold'>{day.date}</p>
+              <h1 className='text-[12px] sm:text-md font-semibold'>{day.day}</h1>
+              <p className='text-[12px] sm:text-md font-semibold'>{day.date}</p>
             </div>
           ))}
         </div>
@@ -138,15 +138,15 @@ function Appointment({isLoggedIn}) {
         </div>
         <button
           onClick={()=> handleAppointment()}
-         className='w-[20vw] px-2 py-4 rounded-[28px] font-outfit text-[17px] bg-[#5F6FFF] text-white mt-8'>
+         className='sm:w-[20vw] px-3 sm:px-2 sm:py-4 py-2 rounded-[28px] font-outfit text-[14px] sm:text-[17px] bg-[#5F6FFF] text-white mt-8'>
           Book an appointment
           
         </button>
      </div>
 
      <div className='w-full flex flex-col items-center justify-center mt-30'>
-      <h1 className='font-outfit text-[25px] '>Related Doctors</h1>
-      <p className='font-outfit text-[#4B5563] text-[13px]'>Simply browse through our extensive list of trusted doctors.</p>
+      <h1 className='font-outfit text-[20px] sm:text-[25px] '>Related Doctors</h1>
+      <p className='font-outfit text-[#4B5563] text-[10px] sm:text-[13px]'>Simply browse through our extensive list of trusted doctors.</p>
      </div>
 
      <div className='w-[85vw] h-auto m-auto mt-6 grid grid-cols-1 sm:grid-cols-5 gap-4 sm:gap-6 '>
