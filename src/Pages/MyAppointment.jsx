@@ -17,8 +17,8 @@ function MyAppointment() {
   }
 
   return (
-    <div className='px-20 h-[80vh] mt-10'>
-      <h1 className='w-full border-b-1 pb-3 font-outfit text-[17px] '>My Appointments</h1>
+    <div className='sm:px-20 px-2 sm:h-[80vh] sm:mt-10'>
+      <h1 className='w-full mt-2 border-b-1 pb-3 font-outfit sm:text-[17px] text-[14px]'>My Appointments</h1>
 
       {/* If no appointments exist */}
       {appointments.length === 0 ? (

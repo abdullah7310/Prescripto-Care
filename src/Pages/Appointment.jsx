@@ -78,7 +78,7 @@ function Appointment({isLoggedIn}) {
   return (
     <>
     <div className='px-2 sm:px-20 mt-4 sm:mt-10 w-full sm:pb-10'>
-      <div className='flex justify-between'>
+      <div className='flex gap-2 justify-between'>
         <div className='sm:w-[17%] flex sm:items-end rounded-xl bg-[#5F6FFF] overflow-hidden h-[21vh] sm:h-[40vh]'>
             <img src={image?image:Doctor}  alt="" />
         </div>
