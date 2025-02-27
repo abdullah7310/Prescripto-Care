@@ -80,7 +80,7 @@ function Appointment({isLoggedIn}) {
     <div className='px-2 sm:px-20 mt-4 sm:mt-10 w-full sm:pb-10'>
       <div className='flex gap-2 justify-between'>
         <div className='sm:w-[17%] flex sm:items-end rounded-xl bg-[#5F6FFF] overflow-hidden h-[21vh] sm:h-[40vh]'>
-            <img src={image?image:Doctor}  alt="" />
+            <img src={image?image:Doctor} className='w-full h-full'  alt="" />
         </div>
         <div className='w-[65%] sm:w-[78%] rounded-xl border-1 border-[#4B5563]  sm:px-8 px-2 py-1 sm:py-4 leading-tight' >
             <div className='flex gap-1 mb-1 items-center sm:justify-normal sm:items-center sm:gap-2'>
