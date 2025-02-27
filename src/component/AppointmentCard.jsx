@@ -9,8 +9,8 @@ function AppointmentCard({image,date,day,time,doctorname,title, onDelete}) {
     // const { image, selectDate, selectDay, selectTime, doctorname, title } = location.state || {};
   return (
     <div className='w-full border-b-1  sm:py-4 sm:h-[35vh] flex items-center justify-between'>
-        <div className='bg-[#EAEFFF] w-[40%] h-[80%] rounded-xl sm:rounded-none sm:h-full sm:w-[15%] flex  justify-center'>
-            <img src={image} className='sm:h-full ' alt="" />
+        <div className='bg-[#EAEFFF] w-[40%] h-[60%] rounded-xl sm:rounded-none sm:h-full sm:w-[15%] flex  justify-center'>
+            <img src={image} className='sm:h-full w-[100%] ' alt="" />
         </div>
         <div className='sm:w-[82%] py-4 sm:py-0  w-[50%] h-full flex flex-col sm:flex-row  justify-between'>
             <div>
