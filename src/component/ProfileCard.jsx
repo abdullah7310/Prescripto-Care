@@ -48,8 +48,8 @@ function ProfileCard() {
           <div className='w-[65%] font-outfit text-[12px] sm:text-[13px]'><input onChange={(e)=>setBirthday(e.target.value)} value={birthday} disabled={!edit} type="text" placeholder='your birthday' className='' /></div>
         </div>
 
-        <button className='  mt-5 sm:mt-10 mr-3 text-[11px] sm:text-[13px] text-[#4B5563] border-[#5F6FFF] hover:bg-[#5F6FFF] hover:text-white font-outfit border-1 px-3 py-2 rounded-[25px]' onClick={()=>handleEdit()}>Edit</button>
-        <button className=' mt-5 sm:mt-10 mr-3 text-[11px] sm:text-[13px] text-[#4B5563] border-[#5F6FFF] hover:bg-[#5F6FFF] hover:text-white font-outfit border-1 px-3 py-2 rounded-[25px]' onClick={()=>handleSaveInfo()}>Save information</button>
+        <button className='  mt-5 sm:mt-10 mr-3 text-[11px] sm:text-[13px] text-[#4B5563] border-[#5F6FFF] hover:bg-[#5F6FFF] hover:text-white active:bg-[#5F6FFF] active:text-[#5F6FFF] font-outfit border-1 px-3 py-2 rounded-[25px]' onClick={()=>handleEdit()}>Edit</button>
+        <button className=' mt-5 sm:mt-10 mr-3 text-[11px] sm:text-[13px] text-[#4B5563] border-[#5F6FFF] hover:bg-[#5F6FFF] hover:text-white active:bg-[#5F6FFF] active:text-[#5F6FFF] font-outfit border-1 px-3 py-2 rounded-[25px]' onClick={()=>handleSaveInfo()}>Save information</button>
         
       </div>
     </div>
