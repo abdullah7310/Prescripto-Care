@@ -20,7 +20,7 @@ function MyAppointment() {
     <div className='mt-[60px] sm:mt-[65px] sm:px-20 px-2 sm:h-[80vh]'>
       <h1 className='w-full mt-2 border-b-1 pb-3 font-outfit sm:text-[17px] text-[14px]'>My Appointments</h1>
 
-      {/* If no appointments exist */}
+     
       {appointments.length === 0 ? (
         <p className='text-gray-500 mt-5 font-outfit'>No appointments booked yet.</p>
       ) : (
