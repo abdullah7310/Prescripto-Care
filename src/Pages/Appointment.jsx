@@ -15,7 +15,7 @@ function Appointment({isLoggedIn}) {
     })
 
   const location = useLocation();
-  const { image, title, doctorname } = location.state || {};
+  const { image, title, doctorname } = location.state || {image:Doctor,title:"General Physician",doctorname:"John Doe"};
 
   const [selectDate,setSelectDate] = useState(null)
   const [ selectDay, setSelectDay] = useState(null)

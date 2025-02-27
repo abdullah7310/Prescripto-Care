@@ -8,7 +8,12 @@ function DoctorCard({ image,doctorname, title }) {
 
   return (
     <div
-      onClick={() => navigate("/appointment", { state: { image, title, doctorname } })}
+      onClick={() =>{
+        navigate("/appointment", { state: { image, title, doctorname } });
+        setTimeout(() => {
+          window.scrollTo({ top: 0, behavior: "smooth" }); 
+        }, 100); 
+      } }
       className='w-[100%] sm:w-[100%] h-[300px] sm:h-[270px] border border-[#C9D8FF] rounded-[10px] overflow-hidden shadow-lg'>
       <div className='h-[70%] w-[100%] flex items-center justify-center bg-[#EAEFFF] '>
         <img src={image} className='h-full' alt="" />

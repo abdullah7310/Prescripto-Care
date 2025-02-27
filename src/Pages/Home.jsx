@@ -87,7 +87,7 @@
 //   };
 //   return (
 //     <>
-    
+
 //       <div className='w-full h-auto flex items-center justify-center'>
 //         <div className='w-[90vw] h-[400px] sm:w-[85vw] sm:h-[80vh] bg-[#5F6FFF] mx-6 sm:mx-12 mt-10 rounded-[12px] flex gap-20 sm:flex-row p-6 sm:p-0 relative'>
 
@@ -188,7 +188,7 @@
 //       </div>
 
 //       <Footer />
-     
+
 //     </>
 
 
@@ -288,7 +288,7 @@ function Home() {
   };
   return (
     <>
-    
+
       <div className='w-full h-auto flex items-center justify-center'>
         <div className='w-[90vw] h-[400px] sm:w-[85vw] md:h-[350px] lg:w-[85vw] lg:h-[80vh] lg:mx-12  md:flex-row  sm:h-[80vh] bg-[#5F6FFF] mx-6 sm:mx-12 mt-10 rounded-[12px] flex gap-20 sm:flex-row p-6 sm:p-0 relative'>
 
@@ -302,7 +302,11 @@ function Home() {
             </div>
             <div className='mt-4 sm:mt-0 flex justify-center sm:justify-start'>
               <button onClick={() => navigate("/appointment")} className='w-[180px] md:w-[150px] lg:w-[200px] lg:h-[48px] mb-8 sm:mb-0 sm:w-[200px] h-[45px] sm:h-[48px] rounded-[35px] flex items-center justify-center gap-2 bg-white'>
-                <p className='text-sm md:text-[12px] lg:text-base sm:text-base'>Book Appointment</p>
+                <p onClick={() => {
+                  setTimeout(() => {
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }, 100);
+                }} className='text-sm md:text-[12px] lg:text-base sm:text-base'>Book Appointment</p>
                 <FaArrowRightLong className='mt-1' />
               </button>
             </div>
@@ -374,7 +378,12 @@ function Home() {
               With 100+ Trusted Doctors
             </h1>
             <div className="mt-4 sm:mt-0 flex justify-center sm:justify-start">
-              <button onClick={() => navigate('/signUp_page')} className='w-[180px] sm:w-[200px] h-[45px] sm:h-[48px] rounded-[35px] flex items-center justify-center gap-2 bg-white'>
+              <button onClick={() => {
+                navigate('/signUp_page');
+                setTimeout(() => {
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }, 100);
+              }} className='w-[180px] sm:w-[200px] h-[45px] sm:h-[48px] rounded-[35px] flex items-center justify-center gap-2 bg-white'>
                 <p className='text-sm sm:text-base'>Create Account</p>
               </button>
             </div>
@@ -389,7 +398,7 @@ function Home() {
       </div>
 
       <Footer />
-     
+
     </>
 
 
