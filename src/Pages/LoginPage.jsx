@@ -85,7 +85,7 @@ function LoginPage({ setIsLoggedIn }) {
   }
 
   return (
-    <div className="flex justify-center items-center h-screen px-5 sm:px-10 md:px-20">
+    <div className="mt-[30px] flex justify-center items-center h-screen px-5 sm:px-10 md:px-20">
       <div className="w-full sm:w-3/4 md:w-1/2 lg:w-1/3 bg-white shadow-lg rounded-xl p-6 sm:p-10">
         <h1 className="text-xl sm:text-2xl font-semibold text-gray-700 text-center">Login</h1>
         <p className="text-sm sm:text-base text-gray-500 mb-6 text-center">Please sign in to continue</p>
