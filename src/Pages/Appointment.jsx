@@ -74,7 +74,7 @@ function Appointment({ isLoggedIn }) {
 
   const allDoctors = [
     { image: Doctor, doctorname: "Dr. Aisha Khan", title: "Gastroenterologist" },
-    { image: DoctorImage4, doctorname: "Dr. Aman Verma", title: "Neurologist" },
+    { image: DoctorImage4, doctorname: "Dr. Sarah Khan", title: "Neurologist" },
     { image: DoctorImage5, doctorname: "Dr. Priya Sharma", title: "Dermatologist" },
     { image: DoctorImage6, doctorname: "Dr. Vikram Malhotra", title: "Gynecologist" },
     { image: DoctorImage7, doctorname: "Dr. Neha Kapoor", title: "Dermatologist" },
