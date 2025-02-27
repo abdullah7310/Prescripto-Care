@@ -14,7 +14,7 @@ function DoctorCard({ image,doctorname, title }) {
           window.scrollTo({ top: 0, behavior: "smooth" }); 
         }, 100); 
       } }
-      className='w-[100%] sm:w-[100%] h-[300px] sm:h-[270px] border border-[#C9D8FF] rounded-[10px] overflow-hidden shadow-lg'>
+      className='w-[100%] sm:w-[100%] h-[300px] sm:h-[270px] border border-[#C9D8FF] rounded-[10px] overflow-hidden shadow-lg cursor-pointer'>
       <div className='h-[70%] w-[100%] flex items-center justify-center bg-[#EAEFFF] '>
         <img src={image} className='h-full' alt="" />
       </div>

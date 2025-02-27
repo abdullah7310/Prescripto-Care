@@ -80,13 +80,14 @@ function AllDoctors() {
 
   return (
     <>
-    <div className='px-2 lg:px-20 w-full pb-10 '>
+    <div className='mt-[40px] sm:mt-[45px] px-2 lg:px-20 w-full pb-10 '>
       <div className='w-full lg:mt-8 mt-2 mb-4 text-[12px] lg:text-sm  font-normal bg-white font-outfit text-[#4B5563] '>Browse through the doctors specialist.</div>
       <div className='flex flex-col lg:flex-row lg:justify-between gap-2'>
-        <div className='w-[auto] lg:w-[17%] grid grid-cols-3 gap-1 lg:flex lg:flex-col  lg:h-[60vh]'>
+        <div className='sm:sticky top-[50px]  w-[auto] lg:w-[17%] grid grid-cols-3 gap-1 lg:flex lg:flex-col  lg:h-[60vh]'>
           {["All", "General Physician", "Gynecologist", "Dermatologist", "Pediatrician", "Neurologist", "Gastroenterologist"].map((doctorTitle)=>(
 
-          <TitleCard title={doctorTitle} key={doctorTitle} onClick={()=>setSelectedTitle(doctorTitle==="All"?"":doctorTitle)}/>
+          <TitleCard title={doctorTitle} selectedFilter={selectedTitle === doctorTitle || (selectedTitle === "" && doctorTitle === "All")} key={doctorTitle} onClick={()=>setSelectedTitle(doctorTitle==="All"?"":doctorTitle)} />
+          
           ))}
 
         </div>
@@ -107,14 +108,14 @@ function AllDoctors() {
         {visibleDoctors < allDoctors.length ? (
           <button
             onClick={showMoreDoctors}
-            className="w-40 my-8 rounded-[20px] bg-[#EAEFFF] font-outfit text-xs py-2"
+            className="w-40 my-8 rounded-[20px] bg-[#EAEFFF] font-outfit text-xs py-2 cursor-pointer"
           >
             Show More
           </button>
         ) : (
           <button
             onClick={viewLessDoctors}
-            className="w-40 my-8 rounded-[20px] bg-[#FFC1C1] font-outfit text-xs py-2"
+            className="w-40 my-8 rounded-[20px] bg-[#FFC1C1] font-outfit text-xs py-2 cursor-pointer"
           >
             View Less
           </button>

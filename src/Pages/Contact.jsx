@@ -4,7 +4,7 @@ import Footer from '../component/Footer'
 
 function Contact() {
   return (
-    <div className='w-full  sm:mt-10 my-2 sm:h-[10vh]'>
+    <div className='w-full mt-[60px] sm:mt-[65px]   my-2 sm:h-[10vh]'>
       <div className='text-center  text-[#4B5563] text-[20px] sm:text-[28px] font-outfit font-normal mt-10'>CONTACT <span className='font-semibold font-outfit text-[#171717]'>US</span>
       </div>
 

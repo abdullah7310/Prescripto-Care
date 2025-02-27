@@ -38,8 +38,8 @@ function Navbar({ isLoggedIn, setIsLoggedIn }) {
   };
 
   return (
-    <div className='px-2 w-full h-[40px] flex justify-between items-center sm:px-6 sm:h-[45px]  border-b-1 border-[#ADADAD] lg:px-20'>
-      <div className='w-[30%] h-[80%] sm:w-[17%] sm:h-full md:w-[18%] lg:w-[10%]  flex items-center'>
+    <div className='px-2 fixed top-0 bg-white z-10 w-full h-[40px] flex justify-between items-center sm:px-6 sm:h-[45px]  border-b-1 border-[#ADADAD] lg:px-20 '>
+      <div onClick={()=> navigate("/")} className='w-[30%] h-[80%] sm:w-[17%] sm:h-full md:w-[18%] lg:w-[10%]  flex items-center cursor-pointer'>
         <img className='w-[100%] h-[65%] sm:h-[60%]' src={logo} alt="" />
       </div>
       {!isLoggedIn && !userLog && (

@@ -289,7 +289,7 @@ function Home() {
   return (
     <>
 
-      <div className='w-full h-auto flex items-center justify-center'>
+      <div className='w-full sm:mt-[45px] mt-[40px] h-auto flex items-center justify-center'>
         <div className='w-[90vw] h-[400px] sm:w-[85vw] md:h-[350px] lg:w-[85vw] lg:h-[80vh] lg:mx-12  md:flex-row  sm:h-[80vh] bg-[#5F6FFF] mx-6 sm:mx-12 mt-10 rounded-[12px] flex gap-20 sm:flex-row p-6 sm:p-0 relative'>
 
           <div className='flex h-[50%] sm:h-[100%] flex-col justify-center sm:pl-[70px] w-full sm:w-[45%] text-center sm:text-left mt-4 sm:mt-0'>
@@ -300,13 +300,13 @@ function Home() {
             <div className='flex md:my-2 justify-center sm:justify-start mt-3 sm:mt-0'>
               <img className='mb-3 w-[90%] sm:w-auto' src={groupIcon} alt="" />
             </div>
-            <div className='mt-4 sm:mt-0 flex justify-center sm:justify-start'>
-              <button onClick={() => navigate("/appointment")} className='w-[180px] md:w-[150px] lg:w-[200px] lg:h-[48px] mb-8 sm:mb-0 sm:w-[200px] h-[45px] sm:h-[48px] rounded-[35px] flex items-center justify-center gap-2 bg-white'>
+            <div className='mt-4 sm:mt-0 flex justify-center  sm:justify-start'>
+              <button onClick={() => navigate("/appointment")} className='w-[180px] md:w-[150px] lg:w-[200px] lg:h-[48px] mb-8 sm:mb-0 sm:w-[200px] h-[45px] cursor-pointer sm:h-[48px] rounded-[35px] flex items-center justify-center gap-2 bg-white'>
                 <p onClick={() => {
                   setTimeout(() => {
                     window.scrollTo({ top: 0, behavior: "smooth" });
                   }, 100);
-                }} className='text-sm md:text-[12px] lg:text-base sm:text-base'>Book Appointment</p>
+                }} className='text-sm md:text-[12px] lg:text-base sm:text-base '>Book Appointment</p>
                 <FaArrowRightLong className='mt-1' />
               </button>
             </div>
@@ -335,7 +335,7 @@ function Home() {
             { title: "Neurologist", image: Neurologist },
             { title: "Gastroenterologist", image: Gastroenterologist }
           ].map((doctorTitle, ind) => (
-            <DoctorIcon image={doctorTitle.image} key={ind} title={doctorTitle.title} onClick={() => setSelectTitle(doctorTitle.title === "All" ? "" : doctorTitle.title)} />
+            <DoctorIcon image={doctorTitle.image} selectedIcon={doctorTitle.title === selectTitle || (doctorTitle.title === "All" && selectTitle === "")} key={ind} title={doctorTitle.title} onClick={() => setSelectTitle(doctorTitle.title === "All" ? "" : doctorTitle.title)} />
           ))}
 
 
@@ -354,14 +354,14 @@ function Home() {
         {visibleDoctors < allDoctors.length ? (
           <button
             onClick={showMoreDoctors}
-            className="w-40 my-8 rounded-[20px] bg-[#EAEFFF] font-outfit text-xs py-2"
+            className="w-40 my-8 rounded-[20px] bg-[#EAEFFF] font-outfit text-xs py-2 cursor-pointer"
           >
             Show More
           </button>
         ) : (
           <button
             onClick={viewLessDoctors}
-            className="w-40 my-8 rounded-[20px] bg-[#FFC1C1] font-outfit text-xs py-2"
+            className="w-40 my-8 rounded-[20px] bg-[#FFC1C1] font-outfit text-xs py-2 cursor-pointer"
           >
             View Less
           </button>
@@ -383,7 +383,7 @@ function Home() {
                 setTimeout(() => {
                   window.scrollTo({ top: 0, behavior: "smooth" });
                 }, 100);
-              }} className='w-[180px] sm:w-[200px] h-[45px] sm:h-[48px] rounded-[35px] flex items-center justify-center gap-2 bg-white'>
+              }} className='w-[180px] sm:w-[200px] h-[45px] sm:h-[48px] rounded-[35px] flex items-center justify-center gap-2 bg-white cursor-pointer'>
                 <p className='text-sm sm:text-base'>Create Account</p>
               </button>
             </div>
