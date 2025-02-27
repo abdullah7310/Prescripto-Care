@@ -236,7 +236,7 @@ function Home() {
 
   const allDoctors = [
     { image: Doctor, doctorname: "Dr. Aisha Khan", title: "Gastroenterologist" },
-    { image: DoctorImage2, doctorname: "Dr. Rohan Mehta", title: "Pediatrician" },
+    { image: DoctorImage2, doctorname: "Dr. Sarah Khan", title: "Pediatrician" },
     { image: DoctorImage3, doctorname: "Dr. Simran Kaur", title: "Gynecologist" },
     { image: DoctorImage4, doctorname: "Dr. Aman Verma", title: "Neurologist" },
     { image: DoctorImage5, doctorname: "Dr. Priya Sharma", title: "Dermatologist" },
